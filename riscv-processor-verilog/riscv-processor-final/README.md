@@ -1,2 +1,2 @@
 # RISC-V Processor
-![] (simple-processor-final.png)
+![](simple-processor-final.png)
