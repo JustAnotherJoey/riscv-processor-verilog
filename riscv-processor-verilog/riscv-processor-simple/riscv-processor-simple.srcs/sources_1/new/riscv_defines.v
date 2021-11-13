@@ -1,0 +1,65 @@
+// Some definitions for making RISC-V instructions in irom.v or decoding them in instruction_decode.v.
+
+// RV32I Instruction Set Opcodes
+`define LUI     7'b0110111
+`define AUIPC   7'b0010111
+`define JAL     7'b1101111
+`define JALR    7'b1100111
+`define BEQ     7'b1100011
+`define BNE     7'b1100011
+`define BLT     7'b1100011
+`define BGE     7'b1100011
+`define BLTU    7'b1100011
+`define BGEU    7'b1100011
+`define LB      7'b0000011
+`define LH      7'b0000011
+`define LW      7'b0000011
+`define LBU     7'b0000011
+`define LHU     7'b0000011
+`define SB      7'b0100011
+`define SH      7'b0100011
+`define SW      7'b0100011
+`define ADDI    7'b0010011
+`define SLTI    7'b0010011
+`define SLTIU   7'b0010011
+`define XORI    7'b0010011
+`define ORI     7'b0010011
+`define ANDI    7'b0010011
+`define SLLI    7'b0010011
+`define SRLI    7'b0010011
+`define SRAI    7'b0010011
+`define ADD     7'b0110011
+`define SUB     7'b0110011
+`define SLL     7'b0110011
+`define SLT     7'b0110011
+`define SLTU    7'b0110011
+`define XOR     7'b0110011
+`define SRL     7'b0110011
+`define SRA     7'b0110011
+`define OR      7'b0110011
+`define AND     7'b0110011
+`define FENCE   7'b0001111
+`define FENCEI  7'b0001111
+`define ECALL   7'b1110011
+`define EBREAK  7'b1110011
+`define CSRRW   7'b1110011
+`define CSRRS   7'b1110011
+`define CSRRC   7'b1110011
+`define CSRRWI  7'b1110011
+`define CSRRSI  7'b1110011
+`define CSRRCI  7'b1110011
+
+// RV32I func codes
+`define FUNC_SLLI 10'b0000000001
+`define FUNC_SRLI 10'b0000000101
+`define FUNC_SRAI 10'b0100000101
+`define FUNC_ADD  10'b0000000000
+`define FUNC_SUB  10'b0100000000
+`define FUNC_SLL  10'b0000000001
+`define FUNC_SLT  10'b0000000010
+`define FUNC_SLTU 10'b0000000011
+`define FUNC_XOR  10'b0000000100
+`define FUNC_SRL  10'b0000000101
+`define FUNC_SRA  10'b0100000101
+`define FUNC_OR   10'b0000000110
+`define FUNC_AND  10'b0000000111
